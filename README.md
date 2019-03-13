@@ -5,9 +5,10 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.3.7
+* Rails version 5.1.4
 
-* System dependencies
+* Using for university program
 
 * Configuration
 
