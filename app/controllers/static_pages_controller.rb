@@ -10,4 +10,10 @@ class StaticPagesController < ApplicationController
 
   def about
   end
+
+  def factory
+  end
+
+  def manage
+  end
 end
