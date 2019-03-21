@@ -48,6 +48,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
+  gem 'guard', '2.13.0'
+  gem 'guard-minitest', '2.4.4'
   gem 'selenium-webdriver'
 end
 
@@ -60,5 +62,8 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+# Windows does not in jbunclude zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'minitest', group: :test
+gem 'minitest-reporters', group: :test
