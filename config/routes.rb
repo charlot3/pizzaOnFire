@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'users/new'
+
   get '/help', to: 'static_pages#help'
 
   get '/menu', to: 'static_pages#menu'
@@ -9,6 +11,8 @@ Rails.application.routes.draw do
   get '/factory', to: 'static_pages#factory'
 
   get '/manage', to: 'static_pages#manage'
+
+  get '/signup', to: 'users#new'
 
   root 'static_pages#home'
 end
