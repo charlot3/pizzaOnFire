@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'manage/new'
+
+  get 'factory/new'
+
+  get 'menu/new'
+
+  get 'orders/new'
+
   get 'users/new'
 
   get '/help', to: 'static_pages#help'
