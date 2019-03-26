@@ -4,6 +4,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   def setup
     @base_title = "PizzaExpress"
   end
+
   test "should get home" do
     get root_path
     assert_response :success
@@ -17,7 +18,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get menu" do
-    get menu_path
+    get menutmp_path
     assert_response :success
     assert_select "title", "Home | #{@base_title}"
   end

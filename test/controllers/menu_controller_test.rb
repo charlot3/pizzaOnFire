@@ -1,9 +1,15 @@
 require 'test_helper'
 
 class MenuControllerTest < ActionDispatch::IntegrationTest
-  test "should get new menu" do
-    get menu_new_url
-    assert_response :success
+  def setup
+    @base_title = "PizzaExpress"
   end
+
+  test "should get menu" do
+    get menu_path
+    assert_response :success
+    assert_select "title", "Menu | #{@base_title}"
+  end
+
 
 end

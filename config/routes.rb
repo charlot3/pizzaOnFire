@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get 'factory/new'
 
-  get 'menu/new'
+  get '/menu', to: 'menu#new'
 
   get 'orders/new'
 
@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   get '/help', to: 'static_pages#help'
 
-  get '/menu', to: 'static_pages#menu'
+  get '/menutmp', to: 'static_pages#menu'
 
   get '/about', to: 'static_pages#about'
 
@@ -22,5 +22,12 @@ Rails.application.routes.draw do
 
   get '/signup', to: 'users#new'
 
+  post '/signup', to: 'users#create'
+
   root 'static_pages#home'
+  resources :users
+  resources :orders
+  resources :menu
+  resources :factory
+  resources :manage
 end
