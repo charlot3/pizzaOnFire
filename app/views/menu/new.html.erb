@@ -91,41 +91,25 @@
           <!-- 这里是菜单相关信息，以表格形式呈现-->
           <div class="tab-pane fade in active" id="menu">
             <table class="table table-hover">
-              <caption>用户订单信息</caption>
               <thead>
               <tr>
-                <th>菜单图</th>
-                <th>收货人信息</th>
+                <th>食物图</th>
+                <th>名称</th>
                 <th>金额</th>
-                <th>订单状态</th>
-                <th>订单详情</th>
+                <th>食物折扣</th>
+                <th>修改入口</th>
               </tr>
               </thead>
               <tbody>
+              <% for menus in @menu %>
               <tr>
-                <td>13000</td>
-                <td>收货人手机13100000000
-                  收货人地址233333333</td>
-                <td>金额xxxxxx</td>
-                <td>订单配送中/送达/骑手接单</td>
-                <td>订单详情button</td>
+                <td><%=menus.fpic %></td>
+                <td><%=menus.fname %></td>
+                <td><%=menus.fprice %></td>
+                <td><%=menus.salecount %></td>
+                <td><button class = "btn btn-primary btn-sm" id = <%=menus.fid %>>修改当前食物信息</button></td>
               </tr>
-              <tr>
-                <td>13000</td>
-                <td>收货人手机13100000000
-                  收货人地址233333333</td>
-                <td>金额xxxxxx</td>
-                <td>订单配送中/送达/骑手接单</td>
-                <td>订单详情button</td>
-              </tr>
-              <tr>
-                <td>13000</td>
-                <td>收货人手机13100000000
-                  收货人地址233333333</td>
-                <td>金额xxxxxx</td>
-                <td>订单配送中/送达/骑手接单</td>
-                <td>订单详情button</td>
-              </tr>
+              <%end %>
               </tbody>
             </table>
           </div>

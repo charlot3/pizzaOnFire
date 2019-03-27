@@ -3,7 +3,7 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def show
+  def show  
     @user = User.find(params[:id])
     #debugger
   end
@@ -11,6 +11,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      log_in @user
       flash[:success] = "Welcome to Pizza Express Back-End!"
       redirect_to user_url(@user)
     else

@@ -1,9 +1,9 @@
 class MenuController < ApplicationController
   def new
-    @menu = Menu.new
+    @menu = Menu.select('fid','fpic','fname','fprice','salecount')
   end
 
-  def create
+  def change
 
   end
 end
