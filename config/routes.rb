@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get 'users/new'
 
+  get 'menu/change'
+
   get '/help', to: 'static_pages#help'
 
   get '/menutmp', to: 'static_pages#menu'
@@ -25,6 +27,10 @@ Rails.application.routes.draw do
   get '/signup', to: 'users#new'
 
   post '/signup', to: 'users#create'
+
+  post 'menu/update'
+
+  post 'menu/create'
 
   get '/login', to: 'sessions#new'
 

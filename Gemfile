@@ -54,7 +54,7 @@ group :development, :test do
   gem 'guard-minitest', '2.4.4'
   gem 'selenium-webdriver'
   gem 'rails-controller-testing'
-
+  gem 'simplecov'
 end
 
 group :development do

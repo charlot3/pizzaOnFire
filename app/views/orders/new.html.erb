@@ -32,7 +32,7 @@
             <%= form_for('/menu', :html => {:class => 'form-inline'}) do |f| %>
               <div class="form-group">
                 <%= f.label :date, "筛选 | 时间：", :for=>"date" %>
-                <%= f.text_field :date, class: "datepicker" %>
+                <%= f.text_field :date, :value=>'2019-03-15 00:00:00 +0000' %>
               </div>
               <div class="form-group">
                 <%= f.label :money_less, "金额下限：" , :for=>"money_less" %>
@@ -90,48 +90,11 @@
           </div>
           <!-- 这里是菜单相关信息，以表格形式呈现-->
           <div class="tab-pane fade" id="menu">
-            <table class="table table-hover">
-              <caption>用户订单信息</caption>
-              <thead>
-              <tr>
-                <th>菜单图</th>
-                <th>收货人信息</th>
-                <th>金额</th>
-                <th>订单状态</th>
-                <th>订单详情</th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <td>13000</td>
-                <td>收货人手机13100000000
-                  收货人地址233333333</td>
-                <td>金额xxxxxx</td>
-                <td>订单配送中/送达/骑手接单</td>
-                <td>订单详情button</td>
-              </tr>
-              <tr>
-                <td>13000</td>
-                <td>收货人手机13100000000
-                  收货人地址233333333</td>
-                <td>金额xxxxxx</td>
-                <td>订单配送中/送达/骑手接单</td>
-                <td>订单详情button</td>
-              </tr>
-              <tr>
-                <td>13000</td>
-                <td>收货人手机13100000000
-                  收货人地址233333333</td>
-                <td>金额xxxxxx</td>
-                <td>订单配送中/送达/骑手接单</td>
-                <td>订单详情button</td>
-              </tr>
-              </tbody>
-            </table>
+
           </div>
           <!-- 这里是库存相关信息，以表格形式呈现-->
           <div class="tab-pane fade" id="stock">
-            <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
+
           </div>
 
         </div>
