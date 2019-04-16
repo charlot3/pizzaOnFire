@@ -40,7 +40,7 @@ class OrdersController < ApplicationController
     if(@order[:date] == '')
 
     else
-      @order[:date] = @order[:date].to_time.to_s.to_i
+      @order[:date] = DateTime.parse(@order[:date]).to_i
       @sql = @sql +"order_ctime >= "+ @order[:date].to_s;
     end
 
@@ -61,7 +61,7 @@ class OrdersController < ApplicationController
     if(@order[:product] == '')
 
     else
-      @sql = @sql+" and oid = "+@order[:product].to_s
+      @sql = @sql+" and oid = '"+@order[:product].to_s+"'"
     end
 
     @@orderParam = Order.where(@sql)

@@ -3,9 +3,11 @@
 <div class="container" >
 
   <%if @errors == 0 %>
-    <div class="alert alert-error">
-      <a class="close" data-dismiss="alert">×</a>
-      <strong>Error!</strong>This is a fatal error.
+    <div id="error_explanation">
+      <div class="alert alert-danger">
+        <a class="close" data-dismiss="alert">×</a>
+        <strong>Error!</strong>id重复
+      </div>
     </div>
     <% @errors = 1 %>
 

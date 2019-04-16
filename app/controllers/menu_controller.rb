@@ -1,7 +1,9 @@
 require 'date'
 class MenuController < ApplicationController
+  @@errorMessage = 1
   def new
-    @menu = Menu.select('fid','fpic','fname','fprice','salecount','fctime',)
+    @menu = Menu.select('fid','fpic','fname','fprice','salecount','fctime')
+    @errors = @@errorMessage
   end
 
   def change
@@ -9,11 +11,17 @@ class MenuController < ApplicationController
   end
 
   def create
-    @tmp1 = params.require(:menu).permit(:fctime)
-    @tmp1 = @tmp1.to_s.to_time.to_i
-    @tmp = Menu.new(params.require(:menu).permit(:fid,:fpic,:fctime,:fprice,:fname))
-    @tmp.fctime = @tmp1
-    Menu.create(fid:@tmp.fid,fpic:@tmp.fpic,fctime:@tmp.fctime,fprice:@tmp.fprice,fname:@tmp.fname)
+    @create = params.require(:menu).permit(:fid)
+    if(Menu.find_by(fid: @create[:fid]))
+      @@errorMessage = 0
+    else
+      @tmp1 = params.require(:menu).permit(:fctime)
+      @tmp1 = @tmp1.to_s.to_time.to_i
+      @tmp = Menu.new(params.require(:menu).permit(:fid,:fpic,:fctime,:fprice,:fname))
+      @tmp.fctime = @tmp1
+      Menu.create(fid:@tmp.fid,fpic:@tmp.fpic,fctime:@tmp.fctime,fprice:@tmp.fprice,fname:@tmp.fname)
+    end
+
 
     redirect_to menu_path
   end

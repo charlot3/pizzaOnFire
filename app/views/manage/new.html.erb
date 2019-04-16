@@ -1,6 +1,16 @@
 <% provide(:title, 'Manage') %>
 <title><%= yield(:title)%></title>
 <div class="container" >
+  <%if @errors == 0 %>
+    <div id="error_explanation">
+      <div class="alert alert-danger">
+        <a class="close" data-dismiss="alert">×</a>
+        <strong>Error!</strong>id重复
+      </div>
+    </div>
+    <% @errors = 1 %>
+
+  <%end %>
   <div class="row">
     <div class="col-xs-12 col-md-12 col-lg-12">
       <ul id="myTab" class="nav nav-pills nav-justified">

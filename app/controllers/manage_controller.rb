@@ -1,10 +1,18 @@
 class ManageController < ApplicationController
+  @@errorMessage = 1
   def new
     @manage = Manage.select('id','name','fid','fname','fhas')
+    @errors = @@errorMessage
   end
 
   def create
-    Manage.create!(params.require(:manage).permit(:id,:name,:fid,:fhas,:fname))
+    @create = params.require(:manage).permit(:id)
+    if(Manage.find_by(id: @create[:id]))
+      @@errorMessage = 0
+    else
+      Manage.create!(params.require(:manage).permit(:id,:name,:fid,:fhas,:fname))
+    end
+
     redirect_to manage_new_path
   end
 
