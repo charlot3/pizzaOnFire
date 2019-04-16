@@ -260,7 +260,7 @@ DEPENDENCIES
   guard-minitest (= 2.4.4)
   jbuilder (~> 2.5)
   jquery-rails
-  listen (>= 3.0.5, < 3.2)
+  listen (~> 3.1.5)
   minitest
   minitest-reporters
   mysql2 (>= 0.3.18, < 0.5)
