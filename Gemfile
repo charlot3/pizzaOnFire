@@ -69,7 +69,7 @@ end
 # Windows does not in jbunclude zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'migenitest', group: :test
+gem 'minitest', group: :test
 gem 'minitest-reporters', group: :test
 
 gem 'ruby-debug-ide'
