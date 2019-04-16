@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="eb1589bb-6b23-4652-95a7-9be9ff4fbeea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="36" column="6" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+            <state relative-caret-position="540">
+              <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -64,11 +65,29 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/factory_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="34" selection-end-line="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
-              <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
         </entry>
@@ -124,10 +143,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="0cffc9d1-fb81-4e1b-ba45-2bbbfadcebaf" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/users/show.html" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/users_helper.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
@@ -178,6 +199,7 @@
         <option value="$PROJECT_DIR$/app/views/factory/create.html.erb" />
         <option value="$PROJECT_DIR$/app/views/factory/new.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/factory_controller.rb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -200,6 +222,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
@@ -341,6 +364,12 @@
               <item name="PizzaOnFire" type="b2602c69:ProjectViewProjectNode" />
               <item name="PizzaOnFire" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="environments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PizzaOnFire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PizzaOnFire" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
               <item name="initializers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -420,7 +449,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -430,6 +458,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -730,6 +759,7 @@
       <workItem from="1555292607449" duration="868000" />
       <workItem from="1555295097755" duration="4199000" />
       <workItem from="1555307858705" duration="14904000" />
+      <workItem from="1555382371471" duration="1241000" />
     </task>
     <task id="LOCAL-00001" summary="pizza initialize">
       <created>1552460115629</created>
@@ -787,7 +817,21 @@
       <option name="project" value="LOCAL" />
       <updated>1555382340439</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="masete">
+      <created>1555382422088</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1555382422088</updated>
+    </task>
+    <task id="LOCAL-00010" summary="I'm who">
+      <created>1555382531761</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1555382531761</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -823,7 +867,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99928000" />
+    <option name="totallyTimeSpent" value="101169000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -835,10 +879,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="23" width="1920" height="1009" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1012" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49899396" visible="true" weight="0.15495208" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49899396" visible="true" weight="0.15654951" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.501006" side_tool="true" weight="0.24606581" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -851,14 +895,14 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49893504" weight="0.32772276" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6033014" weight="0.4438386" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.43237486" side_tool="true" visible="true" weight="0.3456925" />
-      <window_info anchor="right" id="Coverage" sideWeight="0.50166667" side_tool="true" weight="0.32960597" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6027689" visible="true" weight="0.44347826" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.3972311" side_tool="true" visible="true" weight="0.44347826" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" sideWeight="0.49833333" weight="0.32960597" />
       <window_info anchor="right" x="0" y="0" width="430" height="880" id="Documentation" order="4" side_tool="true" weight="0.32960597" />
+      <window_info anchor="right" id="Coverage" order="5" sideWeight="0.50166667" side_tool="true" weight="0.32960597" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -872,7 +916,9 @@
     <MESSAGE value="a first version that could run" />
     <MESSAGE value="change some interesting words" />
     <MESSAGE value="undo token" />
-    <option name="LAST_COMMIT_MESSAGE" value="undo token" />
+    <MESSAGE value="masete" />
+    <MESSAGE value="I'm who" />
+    <option name="LAST_COMMIT_MESSAGE" value="I'm who" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -884,19 +930,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/models/order_test.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/models/product_test.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/controllers/static_pages_controller_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/controllers/orders_controller_test.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -950,13 +983,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/pids/server.pid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/pids/server.pid" />
     <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -1098,28 +1125,12 @@
     <entry file="file://$PROJECT_DIR$/config/boot.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/orders_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="36" column="6" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/wrap_parameters.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/food_controller.rb">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/factory/create.html.erb">
       <provider selected="true" editor-type-id="text-editor">
@@ -1128,15 +1139,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/wrap_parameters.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/factory_helper.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/factory.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/factory_helper.rb">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/factory/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
@@ -1145,10 +1166,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/food_controller.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///Library/Ruby/Gems/2.3.0/extensions/universal-darwin-18/2.3.0/heroku-3.99.4/gem_make.out">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/factory_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="34" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
-          <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
