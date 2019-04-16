@@ -6,7 +6,7 @@ class FactoryController < ApplicationController
   end
 
   def change
- ##hello
+ ##he
   end
 
   def create
