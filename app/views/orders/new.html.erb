@@ -1,5 +1,43 @@
 <% provide(:title, 'Orders') %>
 <title><%= yield(:title)%></title>
+<script type="text/javascript">
+    function checkmap(str1, str2, str3, str4){
+
+        //基本地图加载
+        var map = new AMap.Map(str3, {
+            resizeEnable: true,
+            center: [121.472644, 31.231706],//地图中心点
+            zoom: 13 //地图显示的缩放级别
+        });
+
+        map.plugin(["AMap.ToolBar"], function() {
+            map.addControl(new AMap.ToolBar());
+        });
+        if(location.href.indexOf('&guide=1')!==-1){
+            map.setStatus({scrollWheel:false})
+        }
+        $('#panel').html("");
+        //构造路线导航类
+        var driving = new AMap.Driving({
+            map: map,
+            panel: str4
+        });
+        // 根据起终点名称规划驾车导航路线
+        driving.search([
+            {keyword: str1,city:'上海'},
+            {keyword: str2,city:'上海'}
+        ], function(status, result) {
+            if (status === 'complete') {
+                //alert('绘制驾车路线完成')
+            } else {
+                //alert('获取驾车数据失败：' + result)
+            }
+        });
+
+    }
+
+</script>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.14&key=cebb793f3160b3848dac88bf563e76c4&plugin=AMap.Driving"></script>
 <div class="container" >
 
 
@@ -29,7 +67,7 @@
         <div id="myTabContent" class="tab-content">
           <!-- 这里是相关订单的信息，以表格形式呈现 -->
           <div class = "tab-pane fade in active" id="order">
-            <%= form_for('/menu', :html => {:class => 'form-inline'}) do |f| %>
+            <%= form_for("param" ,:html => {:class => 'form-inline', :method => :post}, :url => url_for(:controller => 'orders', :action => 'check')) do |f| %>
               <div class="form-group">
                 <%= f.label :date, "筛选 | 时间：", :for=>"date" %>
                 <%= f.text_field :date, :value=>'2019-03-15 00:00:00 +0000' %>
@@ -43,11 +81,12 @@
                 <%= f.text_field :money_more %>
               </div>
               <div class="form-group">
-                <%= f.label :product, "商品名称及订单号：" , :for=>"money_less" %>
+                <%= f.label :product, "订单号：" , :for=>"money_less" %>
                 <%= f.text_field :product %>
               </div>
               <%= f.submit "查询", class: "btn btn-primary btn-sm" %>
             <% end %>
+            <br/>
             <div class="container">
               <table class="table table-hover">
                 <thead>
@@ -60,30 +99,60 @@
                 </tr>
                 </thead>
                 <tbody>
+                <%if @order.nil? %>
+                <%else %>
+                <%for orders in @order %>
                 <tr>
-                  <td>13000</td>
-                  <td>收货人手机13100000000
-                    收货人地址233333333</td>
-                  <td>金额xxxxxx</td>
-                  <td>订单配送中/送达/骑手接单</td>
-                  <td>订单详情button</td>
+                  <td><%=orders.oid %></td>
+                  <td><%=orders.oaddress %>
+                    </td>
+                  <td><%=orders.orderprice %></td>
+                  <td><%=orders.orderstatus %></td>
+                  <td>
+                    <button class = "btn btn-primary btn-sm" data-toggle = "modal" data-target = <%='#'+orders.oid.to_s %> >当前订单</button>
+                    <div class="modal fade" id=<%=orders.oid %> tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">订单进展</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class = "cont" id=<%=orders.oid.to_s+'container' %> ></div>
+                            <div class = "pan" id='panel' %></div>
+                            <%= form_for("factoryChoose", url:orders_update_url) do |f| %>
+                              <%= f.label :派送将由 %>
+
+                              <select class="form-control" name="factoryChoose[factory]" onclick="checkmap(value,<%='"'+orders.oaddress.to_s+'"' %>,<%='"'+orders.oid.to_s+'container"' %>, 'panel')">
+                                <% for fac in @factory %>
+                                <option value = <%=fac[:address] %>><%=fac[:address] + " 剩余外卖员: " + fac[:transman].to_s%></option>
+                                <%end %>
+                              </select>
+
+                              <script>
+                                  checkmap('<%= %Q(#{@factory.first()[:address]})%>','<%=%Q(#{orders.oaddress.to_s}) %>','<%=%Q(#{orders.oid.to_s}container) %>', '')
+                              </script>
+                              <%= f.label :配送至 %>
+                              <%= f.text_field :address, class: 'form-control', :value => orders.oaddress, :readonly => true%>
+                              <%= f.label :单号id %>
+                              <%= f.text_field :id, class: 'form-control', :value => orders.oid, :readonly => true%>
+                              <br/>
+                              <%= f.submit "进行配送", class: "btn btn-primary"%>
+                              <%= f.submit "无法配送", class: "btn btn-danger"%>
+                              <%= f.submit "配送完成", class: "btn btn-success"%>
+                              <%= f.submit "退货", class: "btn btn-info"%>
+                            <% end %>
+                          </div>
+                          <div class="modal-footer">
+                          </div>
+                        </div><!-- /.modal-content -->
+                      </div><!-- /.modal -->
+                    </div>
+                  </td>
                 </tr>
-                <tr>
-                  <td>13000</td>
-                  <td>收货人手机13100000000
-                    收货人地址233333333</td>
-                  <td>金额xxxxxx</td>
-                  <td>订单配送中/送达/骑手接单</td>
-                  <td>订单详情button</td>
-                </tr>
-                <tr>
-                  <td>13000</td>
-                  <td>收货人手机13100000000
-                    收货人地址233333333</td>
-                  <td>金额xxxxxx</td>
-                  <td>订单配送中/送达/骑手接单</td>
-                  <td>订单详情button</td>
-                </tr>
+
+                <%end %>
+                <%end %>
                 </tbody>
               </table>
             </div>
@@ -117,4 +186,33 @@
   input, textarea, select, .uneditable-input {
     border: 1px solid #bbb;
   }
+
+
+  .cont {
+    width: 500px;
+    height: 500px;
+  }
 </style>
+<style type="text/css">
+  .pan {
+    position: fixed;
+    background-color: white;
+    max-height: 90%;
+    overflow-y: auto;
+    top: 60px;
+    right: 10px;
+    width: 280px;
+  }
+  .pan .amap-call {
+    background-color: #009cf9;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .pan .amap-lib-driving {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    overflow: hidden;
+  }
+</style>
+
+

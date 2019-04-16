@@ -1,0 +1,72 @@
+<% provide(:title, 'Manage') %>
+<title><%= yield(:title)%></title>
+<div class="container" >
+  <div class="row">
+    <div class="col-xs-12 col-md-12 col-lg-12">
+      <ul id="myTab" class="nav nav-pills nav-justified">
+        <li>
+          <a href=<%=manage_new_path %>>
+            原料管理
+          </a>
+        </li>
+        <li>
+          <a href=<%=product_new_path %>>
+            产品追溯
+          </a>
+        </li>
+        <li>
+          <a href=<%=factory_new_path %>>
+            管理工厂
+          </a>
+        </li>
+        <li class = "active">
+          <a href=<%=userinfo_new_path %>>
+            查看用户信息
+          </a>
+        </li>
+      </ul>
+      <br/>
+
+      <div class="container">
+        <div id="myTabContent" class="tab-content">
+          <!-- 这里是库存相关信息，以表格形式呈现-->
+          <div class="tab-pane fade in active" id="stock">
+            <table class="table table-hover">
+              <thead>
+              <tr>
+                <th>用户id</th>
+                <th>用户名</th>
+                <th>用户邮件</th>
+                <th>用户电话</th>
+              </tr>
+              </thead>
+              <tbody>
+              <%for user in @userinfo %>
+                <tr>
+                  <td><%=user.uid %></td>
+                  <td><%=user.username %></td>
+                  <td><%=user.useremail %></td>
+                  <td><%=user.usertel %></td>
+                </tr>
+              <%end %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.datepicker').datepicker();
+
+            });
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  input, textarea, select, .uneditable-input {
+    border: 1px solid #bbb;
+  }
+</style>

@@ -1,3 +1,3 @@
 class Manage < ApplicationRecord
-  self.table_name = "sn_members"
+  self.table_name = "genryo"
 end

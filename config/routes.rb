@@ -1,10 +1,20 @@
 Rails.application.routes.draw do
 
+  get 'refund/new'
+
+  get 'product/new'
+
+  get 'food/new'
+
   get 'sessions/new'
 
   get 'manage/new'
 
   get 'factory/new'
+
+  post 'factory/update'
+
+  post 'factory/create'
 
   get '/menu', to: 'menu#new'
 
@@ -13,6 +23,14 @@ Rails.application.routes.draw do
   get 'users/new'
 
   get 'menu/change'
+
+  get 'food/new'
+
+  get 'product/new'
+
+  get 'refund/new'
+
+  get 'userinfo/new'
 
   get '/help', to: 'static_pages#help'
 
@@ -28,9 +46,20 @@ Rails.application.routes.draw do
 
   post '/signup', to: 'users#create'
 
+
+  post 'manage/update'
+
+  post 'manage/create'
+
   post 'menu/update'
 
   post 'menu/create'
+
+  post 'orders/create'
+
+  post 'orders/check'
+
+  post 'orders/update'
 
   get '/login', to: 'sessions#new'
 
