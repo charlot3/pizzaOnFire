@@ -1,72 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb1589bb-6b23-4652-95a7-9be9ff4fbeea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/food.coffee" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/product.coffee" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/refund.coffee" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/userinfo.coffee" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/food.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/product.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/refund.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/userinfo.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/food_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/product_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/refund_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/userinfo_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/food_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/product_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/refund_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/userinfo_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/food.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/product.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/refund.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/userinfo.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/factory/create.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/factory/update.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/food/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/manage/update.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/orders/check.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/orders/create.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/product/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/refund/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/userinfo/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/benchmark.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/environments/production1.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/food_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/product_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/refund_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/userinfo_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/foods.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/products.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/refunds.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/userinfos.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/food_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/product_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/refund_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/userinfo_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/factory_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/factory_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/manage_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/manage_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/orders_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/orders_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/manage_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/manage_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/factory.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/factory.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/manage.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/manage.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/factory/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/factory/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/manage/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/manage/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/menu/create.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/menu/create.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/menu/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/menu/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/menu/update.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/menu/update.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/orders/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/orders/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/secrets.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/secrets.yml" afterDir="false" />
-    </list>
+    <list default="true" id="eb1589bb-6b23-4652-95a7-9be9ff4fbeea" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,11 +62,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/factory_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+            <state relative-caret-position="195">
+              <caret line="13" column="50" lean-forward="true" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -145,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/factory/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -251,7 +186,8 @@
     <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2" />
     <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="1009" />
@@ -791,7 +727,7 @@
       <workItem from="1555292531371" duration="72000" />
       <workItem from="1555292607449" duration="868000" />
       <workItem from="1555295097755" duration="4199000" />
-      <workItem from="1555307858705" duration="14428000" />
+      <workItem from="1555307858705" duration="14758000" />
     </task>
     <task id="LOCAL-00001" summary="pizza initialize">
       <created>1552460115629</created>
@@ -828,7 +764,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553173893998</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="a first version that could run">
+      <created>1555381435216</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1555381435216</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -864,7 +807,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99452000" />
+    <option name="totallyTimeSpent" value="99782000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -876,15 +819,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="23" width="1920" height="1009" extended-state="6" />
-    <editor active="true" />
+    <frame x="2" y="23" width="1920" height="1009" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49899396" visible="true" weight="0.15495208" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.501006" side_tool="true" weight="0.24606581" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4990366" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5676251" visible="true" weight="0.3456925" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5676251" visible="true" weight="0.3456925" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.64164007" weight="0.3991276" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -893,7 +835,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49893504" weight="0.32772276" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6033014" weight="0.4438386" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.43237486" side_tool="true" visible="true" weight="0.3456925" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="11" sideWeight="0.43237486" side_tool="true" visible="true" weight="0.3456925" />
       <window_info anchor="right" id="Coverage" sideWeight="0.50166667" side_tool="true" weight="0.32960597" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -910,7 +852,8 @@
     <MESSAGE value="changing readme" />
     <MESSAGE value="adding bootstrap into the scss&#10;place controller static controller" />
     <MESSAGE value="tmp save on company..." />
-    <option name="LAST_COMMIT_MESSAGE" value="tmp save on company..." />
+    <MESSAGE value="a first version that could run" />
+    <option name="LAST_COMMIT_MESSAGE" value="a first version that could run" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -1176,17 +1119,17 @@
     <entry file="file://$PROJECT_DIR$/app/helpers/factory_helper.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/factory_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/factory/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/factory_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="50" lean-forward="true" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
         </state>
       </provider>
     </entry>
