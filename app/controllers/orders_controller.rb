@@ -28,9 +28,11 @@ class OrdersController < ApplicationController
       for tmp in @selectFactory
         ActiveRecord::Base.connection.exec_query("update factories set transman = #{tmp[:transman]+1}  where id = #{tmp[:id]}")
       end
+      Order.update(@oid[:id], :orderstatus=>4)
     elsif(@checkStatus[:commit] == "退货")
       Order.update(@oid[:id], :shopname=>@oid[:factory], :orderstatus=>5)
     end
+
     redirect_to orders_new_path
   end
 
